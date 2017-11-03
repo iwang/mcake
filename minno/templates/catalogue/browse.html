@@ -1,0 +1,129 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html class="" lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="TODO"/>
+    <meta name="description" content="TODO"/>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="referrer" content="always">
+    <link rel="shortcut icon" href="https://b.yzcdn.cn/v2/image/yz_fc.ico"/>
+    <title>Minno. Cake</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+
+    {% if use_less %}
+        <link rel="stylesheet/less" type="text/css" href="{% static "/static/less/styles.less" %}"/>
+    {% else %}
+        <link rel="stylesheet" type="text/css" href="{% static "/static/css/styles.css" %}"/>
+    {% endif %}
+
+</head>
+
+<body>
+<div class="container" style="min-height: 554px;">
+
+    <!-- carousel -->
+
+    <div class="big-show-container carousel">
+
+        <div class="big-show"
+             style="
+         background-image: url('/media/banner/carosal1.jpg');
+         background-size: contain;">
+        </div>
+    </div>
+
+     <!-- Cube 4 -->
+
+    <div class="cube cube-4">
+        <a href="#">
+            <img src="/media/banner/FnhUzhO1OZ-ITAdZHudk0MRDvIw8.png!730x0.jpg">
+        </a>
+        <a href="#">
+            <img src="/media/banner/FtB0zmuCUSffI74645fFPK2k-OKM.png!730x0.jpg">
+        </a>
+        <a href="#">
+            <img src="/media/banner/FuwClLrvNGctwBtJb7NK1_oA5tpk.png!730x0.jpg">
+        </a>
+        <a href="#">
+            <img src="/media/banner/FpUXIRTw2alzD1yUGL-9OQlk7Uxn.png!730x0.jpg">
+        </a>
+    </div>
+
+    <!-- Cube 2 -->
+    <div class="cube cube-2">
+        <a href="#">
+            <img src="/media/banner/FpY28lLpT3yHb6FtCFKb-XR4Xpb8.png!730x0.jpg">
+        </a>
+        <a href="#">
+            <img src="/media/banner/Fh2l24p5zW8QQ9oULrN6Wd4u6Rfc.png!730x0.jpg">
+        </a>
+    </div>
+
+    <div class="notice-bar">
+        <div class="notice-bar_left-icon"><img
+                src="/media/banner/bell.png"></div>
+        <div class="notice-bar__content-wrap">
+            <div class="van-notice-bar__content"
+                 style="transform: translate3d(0px, 0px, 0px); transition-delay: 1s; transition-duration: 0s;">
+                购买请添加客服微信号：3456534560
+            </div>
+        </div>
+    </div>
+
+    <!-- Top -->
+
+    <div class="big-show-container top-rank">
+
+        <div class="big-show"
+             style="
+         background-image: url('/media/banner/top1.jpg');
+         background-size: contain;">
+        </div>
+    </div>
+
+    <div class="big-show-container top-rank">
+
+        <div class="big-show"
+             style="
+         background-image: url('/media/banner/top2.jpg');
+         background-size: contain;">
+        </div>
+    </div>
+
+    <div class="big-show-container top-rank">
+
+        <div class="big-show"
+             style="
+         background-image: url('/media/banner/top3.jpg');
+         background-size: contain;">
+        </div>
+    </div>
+
+    <div class="big-show-container top-rank">
+
+        <div class="big-show"
+             style="
+         background-image: url('/media/banner/top4.jpg');
+         background-size: contain;">
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+
+{% if use_less %}
+    {# Load the on-the-fly less compiler. Never do this in production. #}
+    <script src=" {% static '/static/js/less.min.js' %}"></script>
+{% endif %}
+
+</body>
+
+
+</html>
